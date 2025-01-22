@@ -339,7 +339,7 @@ body::selection {
   border-radius: 50%;
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i) * calc(360deg / 15))) translateZ(300px);
+  transform: rotateY(calc(var(--i) * calc(360deg / 10))) translateZ(300px);
 }
 
 .circle span img {
@@ -356,13 +356,15 @@ body::selection {
   padding: 100px;
   background-color: #25262a;
   min-height: 95vh;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
 }
 
 .cards {
   min-width: 50%;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .design-card {
